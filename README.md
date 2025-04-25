@@ -1,3 +1,5 @@
+!!! This project is currently under development !!!
+
 <--- 0410 Updated --->
 - 사용할 코드들은 모두 디렉터리는 mic_re_0410에 위치
 - 실행 방법 'python3 detect_ver3.py 2> /dev/null' 이 명령어로 실행 그냥 python3 detect_ver3.py으로 실행 시 잡다한 경고 오류(무시 가능) 까지 출력되어서 실제 출력되어야 할 메세지가 안보임 
