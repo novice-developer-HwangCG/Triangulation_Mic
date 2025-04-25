@@ -1,3 +1,20 @@
+<--- 0410 Updated --->
+- 사용할 코드들은 모두 디렉터리는 mic_re_0410에 위치
+- 실행 방법 'python3 detect_ver3.py 2> /dev/null' 이 명령어로 실행 그냥 python3 detect_ver3.py으로 실행 시 잡다한 경고 오류(무시 가능) 까지 출력되어서 실제 출력되어야 할 메세지가 안보임 
+- 기존 mic_setup.py 실행 이 후 index.py를 실행 그렇다면 기존 장치들과 mic_setup.py를 실행하여 생성된 별칭이 존재할 텐데 우리가 써야할 번호는 기존 장치들 번호
+    (예시)
+    1: Comica_VM10 PRO: USB Audio (hw:3,0) (2 in)
+    2: Comica_VM10 PRO: USB Audio (hw:4,0) (2 in)
+    3: Comica_VM10 PRO: USB Audio (hw:5,0) (2 in)
+    11: mic_1 (128 in)
+    12: mic_2 (128 in)
+    13: mic_3 (128 in)
+
+    * 별칭으로 생성했을 때 mic_1 부터가 우측이니 (hw:5,0)이 우측 마이크가 되는 것것
+
+- 기존 장치들 번호(1,2,3..)을 detect_ver3.py 코드에서 MIC_DEVICES 배열을 찾아 각 위치에 따라 번호 수정 후 실행하면 끝남
+
+
 <---HOW TO SET MIC IN RASPBERRY PI 4 ver 2--->
 
 1. pulseaudio가 설치 되어 있을 시 생략 후 2번부터 확인
