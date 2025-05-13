@@ -1,4 +1,4 @@
-!!! This project is currently under development !!!
+!!! This project has been abandoned !!!
 
 <--- 0410 Updated --->
 - 사용할 코드들은 모두 디렉터리는 mic_re_0410에 위치
